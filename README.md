@@ -1,4 +1,4 @@
-# Welcome to my website!!
+# Welcome to my website!
 
 [![image](https://user-images.githubusercontent.com/66440439/113936841-4aee2b80-97f0-11eb-93f8-384a4da34311.png)
 
