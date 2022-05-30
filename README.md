@@ -17,3 +17,4 @@ Please excuse the emptiness... I am currently trying to make a better website he
 
 
 Update: added link to image.
+Update 2: fixed renaming issues.
