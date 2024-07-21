@@ -50,18 +50,19 @@ body, html {
 }
 
 .chat-bubble {
+    opacity: 0;
     max-width: 80%;
     padding: 10px 15px;
     margin: 5px 0;
     border-radius: 20px;
     position: relative;
-    animation: slideIn 1s ease-in-out forwards;
 }
 
 .chat-bubble.left {
     background-color: #505050;
     left: 2%;
     margin-right: auto;
+    animation: slideInLeft 1s ease-in-out forwards;
 }
  
 .chat-bubble.right {
@@ -70,6 +71,7 @@ body, html {
     margin-left: auto;
     align-self: flex-end;
     color: #fff; 
+    animation: slideRight 1s ease-in-out forwards;
 }
 
 .chat-bubble::before,
@@ -122,8 +124,13 @@ body, html {
     to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes slideIn {
+@keyframes slideInRight {
     from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); }
     to { transform: translateX(0); }
 }
 
