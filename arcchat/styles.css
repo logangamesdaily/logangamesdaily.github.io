@@ -58,18 +58,41 @@ body, html {
     animation: slideIn 1s ease-in-out forwards;
 }
 
-.chatbubble.left {
+.chat-bubble.left {
     background-color: #505050;
     left: 2%;
     margin-right: auto;
 }
  
-.chatbubble.right {
+.chat-bubble.right {
     background-color: #0000cc;
     right: 2%;
     margin-left: auto;
     align-self: flex-end;
     color: #fff; 
+}
+
+.chat-bubble::before,
+.chat-bubble::after {
+    bottom: -0.1rem;
+    content: "";
+    height: 1rem;
+    position: absolute;
+}
+
+.chat-bubble.right::before {
+    border-bottom-left-radius: 0.8rem 0.7rem;
+    border-right: 1rem solid #0000cc;
+    right: -0.35rem;
+    transform: translate(0, -0.1rem);
+}
+
+.chat-bubble.right::after {
+    background-color: #202020;
+    border-bottom-left-radius: 0.5rem;
+    right: -40px;
+    transform:translate(-30px, -2px);
+    width: 10px;
 }
 
 .cta-button {
