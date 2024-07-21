@@ -9,6 +9,7 @@ body, html {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    width: 100%;
 }
 
 .container {
@@ -58,7 +59,7 @@ body, html {
 }
 
 .chat-bubble.left {
-    transform: translateX(-100%);
+    transform: translateX(-150%);
     background-color: #505050;
     left: 2%;
     margin-right: auto;
@@ -66,13 +67,13 @@ body, html {
 }
  
 .chat-bubble.right {
-    transform: translateX(100%);
+    transform: translateX(150%);
     background-color: #0000cc;
     right: 2%;
     margin-left: auto;
     align-self: flex-end;
     color: #fff; 
-    animation: slideRight 1s ease-in-out forwards;
+    animation: slideInRight 1s ease-in-out forwards;
 }
 
 .chat-bubble::before,
@@ -126,12 +127,12 @@ body, html {
 }
 
 @keyframes slideInRight {
-    from { transform: translateX(100%); }
+    from { transform: translateX(150%); }
     to { transform: translateX(0); }
 }
 
 @keyframes slideInLeft {
-    from { transform: translateX(-100%); }
+    from { transform: translateX(-150%); }
     to { transform: translateX(0); }
 }
 
