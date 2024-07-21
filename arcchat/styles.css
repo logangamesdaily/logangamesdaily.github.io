@@ -58,16 +58,18 @@ body, html {
     animation: slideIn 1s ease-in-out forwards;
 }
 
-.chat-bubble.left {
-    background: #004e92;
-    align-self: flex-start;
-    animation-delay: 0.5s;
+.chatbubble.left {
+    background-color: #505050;
+    left: 2%;
+    margin-right: auto;
 }
-
-.chat-bubble.right {
-    background: #00172d;
+ 
+.chatbubble.right {
+    background-color: #0000cc;
+    right: 2%;
+    margin-left: auto;
     align-self: flex-end;
-    animation-delay: 1s;
+    color: #fff; 
 }
 
 .cta-button {
