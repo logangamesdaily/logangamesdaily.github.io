@@ -12,6 +12,11 @@ body, html {
     width: 100%;
 }
 
+a {
+    font-size: 16pt;
+    color: #0000dd;
+}
+
 .container {
     text-align: center;
     animation: fadeIn 2s ease-in-out;
