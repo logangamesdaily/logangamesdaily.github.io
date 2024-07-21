@@ -28,7 +28,7 @@ body, html {
 
 .demo .phone {
     width: 100%;
-    max-width: 300px;
+    max-width: 700px;
     height: 500px;
     background: #1a1a1a;
     border-radius: 40px;
@@ -96,15 +96,16 @@ body, html {
 }
 
 .cta-button {
-    background: #ff4b2b;
+    background: #0000cc;
     border: none;
     padding: 15px 30px;
     font-size: 1.2em;
-    border-radius: 30px;
-    color: white;
+    border-radius: 15px;
+    color: #aaaaaa;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
     animation: fadeIn 2s ease-in-out;
+    font-family: 'Nunito Sans';
 }
 
 .cta-button:hover {
