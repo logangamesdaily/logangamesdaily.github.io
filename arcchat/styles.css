@@ -9,6 +9,8 @@ body, html {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    max-width: 50%;
+    min-width: 100px;
 }
 
 .container {
